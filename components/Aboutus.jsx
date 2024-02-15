@@ -14,15 +14,15 @@ const Aboutus = () => {
               height={500}
             />
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col gap-6 lg:justify-left md:items-start justify-center items-center">
-              <h1 className="text-gray-900 md:text-6xl title-font font-medium mb-1 text-4xl">
-                Welcome to our{" "}
+              <h1 className="text-center text-gray-900 md:text-6xl title-font font-medium mb-1 text-4xl">
+                Welcome to our
                 <span className="text-[#0CB8B6] font-semibold">Clinic</span>
               </h1>
-              <p className="font-bold flex">
+              <p className="font-bold flex text-center md:text-left">
                 A hospital is a health care institution providing patient
                 treatment with specialized medical
               </p>
-              <p className="leading-relaxed lg:text-left text-center">
+              <p className="leading-relaxed lg:text-left text-center text-sm">
                 Lazer for painless dental treatments lazer for jaw joint and
                 other joint problems splint therapy for migraine, headaches,
                 back pain, gait issues immediate fixed single and full mouth
