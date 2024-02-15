@@ -4,65 +4,42 @@ import Image from "next/image";
 const Aboutus = () => {
   return (
     <div className={styles.main}>
-      <section class="text-gray-600 body-font border border-r-emerald-900">
-        <div class="container px-5 py-24 mx-auto flex flex-col">
-          <div class="lg:w-4/6 mx-auto">
-            <div class="flex items-center justify-center sm:flex-row mt-10 border border-red-500 text-black font-bold text-4xl">
-              <h1>Who we are</h1>
-            </div>
-            <div class="flex flex-col sm:flex-row mt-10">
-              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-10 h-10"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                  </svg>
-                </div>
-                <div class="flex flex-col items-center text-center justify-center">
-                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">
-                    Phoebe Caulfield
-                  </h2>
-                  <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
-                  <p class="text-base">
-                    Raclette knausgaard hella meggs normcore williamsburg enamel
-                    pin sartorial venmo tbh hot chicken gentrify portland.
-                  </p>
-                </div>
-              </div>
-              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p class="leading-relaxed text-lg mb-4">
-                  Meggings portland fingerstache lyft, post-ironic fixie man bun
-                  banh mi umami everyday carry hexagon locavore direct trade art
-                  party. Locavore small batch listicle gastropub farm-to-table
-                  lumbersexual salvia messenger bag. Coloring book flannel
-                  truffaut craft beer drinking vinegar sartorial, disrupt
-                  fashion axe normcore meh butcher. Portland scenester
-                  vexillologist forage post-ironic asymmetrical, chartreuse
-                  disrupt butcher paleo intelligentsia pabst before they sold
-                  out four loko. 3 wolf moon brooklyn.
-                </p>
-                <a class="text-blue-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+      <section className="text-gray-600 body-font overflow-hidden">
+        <div className="container px-2 py-24 mx-auto">
+          <div className="lg:w-[100%] mx-auto flex flex-wrap lg:justify-center lg:items-center">
+            <Image
+              src="/illustrationdoc.png"
+              alt="Picture of the author"
+              width={500}
+              height={500}
+            />
+            <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0 flex flex-col gap-6 lg:justify-left md:items-start justify-center items-center">
+              <h1 className="text-gray-900 md:text-6xl title-font font-medium mb-1 text-4xl">
+                Welcome to our{" "}
+                <span className="text-[#0CB8B6] font-semibold">Clinic</span>
+              </h1>
+              <p className="font-bold flex">
+                A hospital is a health care institution providing patient
+                treatment with specialized medical
+              </p>
+              <p className="leading-relaxed lg:text-left text-center">
+                Lazer for painless dental treatments lazer for jaw joint and
+                other joint problems splint therapy for migraine, headaches,
+                back pain, gait issues immediate fixed single and full mouth
+                fixed implants zygomatic and pterigoid implants for patients who
+                lost jaw bone to cancer Tooth colored ceramic veeners and caps
+                Clear aligners and braces for crooked teeth tooth colored
+                fillings for broken and decayed teeth Lazer teeth whitening
+                lazer Root canal treatment treatment of gums treatment of teeth
+                gaps treatment of wisdom teeth Implants Full mouth
+                rehabilitation Sports Dentistry Smile designing Orthodontic
+                treatment Root Canal treatment Wisdom tooth surgeries Teeth
+                whitening
+              </p>
+              <div classNameName="justify-center items-center flex">
+                <button className="flex w-auto text-white bg-[#0CB8B6] hover:bg-[#000] border-0 py-2 px-6 focus:outline-none  rounded">
+                  Book an Appoinment
+                </button>
               </div>
             </div>
           </div>

@@ -1,74 +1,63 @@
 import React from "react";
 import Image from "next/image";
+import styles from "@/styles/feature.module.scss";
 
 const Feature = () => {
   return (
-    <div>
-      <section class="text-gray-600 body-font px-[100px]">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="p-4">
-                  <div className=" flex justify-center py-4">
-                    <Image
-                      src="/docs.svg"
-                      alt="Picture of the author"
-                      width={100}
-                      height={100}
-                    />
-                  </div>
-                  <h1 class="title-font text-xl text-gray-900 mb-3 flex justify-center font-bold">
-                    Qualified Doctors
-                  </h1>
-                  <p class="leading-relaxed mb-3 text-center">
-                    Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                    tempor inc ididunt utid labore.
-                  </p>
-                </div>
+    <div className={styles.main}>
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 gap-10 justify-center">
+            <div className="p-4 md:w-[30%] sm:mb-0 mb-6 shadow-sm rounded-lg border">
+              <div className="rounded-lg overflow-hidden h-28 flex justify-center items-center">
+                <Image
+                  src="/docs.svg"
+                  alt="Picture of the author"
+                  width={100}
+                  height={100}
+                />
               </div>
+              <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center">
+                Qualified Doctor
+              </h2>
+              <p className="text-base leading-relaxed mt-2 text-center">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </p>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="p-6">
-                  <div className="flex justify-center py-4">
-                    <Image
-                      src="/service.svg"
-                      alt="Picture of the author"
-                      width={100}
-                      height={100}
-                    />
-                  </div>
-                  <h1 class="title-font text-xl text-gray-900 mb-3 flex justify-center font-bold">
-                    24 Hours Service
-                  </h1>
-                  <p class="leading-relaxed mb-3">
-                    Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                    tempor inc ididunt utid labore.
-                  </p>
-                </div>
+            <div className="p-4 md:w-[30%] shadow-sm rounded-lg border sm:mb-0 mb-6">
+              <div className="rounded-lg  overflow-hidden h-28 flex justify-center items-center">
+                <Image
+                  src="/service.svg"
+                  alt="Picture of the author"
+                  width={100}
+                  height={100}
+                />
               </div>
+              <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center ">
+                24 Hours Service
+              </h2>
+              <p className="text-base leading-relaxed mt-2 text-center">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </p>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <div class="p-6">
-                  <div className=" flex justify-center py-4">
-                    <Image
-                      src="/emergency.svg"
-                      alt="Picture of the author"
-                      width={100}
-                      height={100}
-                    />
-                  </div>
-                  <h1 class="title-font text-xl text-gray-900 mb-3 flex justify-center font-bold">
-                    Need Emergency
-                  </h1>
-                  <p class="leading-relaxed mb-3">
-                    Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
-                    tempor inc ididunt utid labore.
-                  </p>
-                </div>
+            <div className="p-4 md:w-[30%] shadow-sm rounded-lg border sm:mb-0 mb-6">
+              <div className="rounded-lg overflow-hidden h-28 flex justify-center items-center">
+                <Image
+                  src="/emergency.svg"
+                  alt="Picture of the author"
+                  width={100}
+                  height={100}
+                />
               </div>
+              <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center">
+                Need Emergency
+              </h2>
+              <p className="text-base leading-relaxed mt-2 text-center">
+                Lorem ipsum dolor sit amet consectet adipis sed do eiusmod
+                tempor inc ididunt utid labore.
+              </p>
             </div>
           </div>
         </div>

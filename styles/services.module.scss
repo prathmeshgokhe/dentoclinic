@@ -1,6 +1,28 @@
 .main {
-  border: 2px solid red;
+  height: auto;
+  // padding: 70px 0;
+  // border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile Portrait */
+@media (min-width: 300px) and (max-width: 480px) {
+  .main {
+    height: auto;
+    padding: 0px;
+  }
+}
+
+/* Mobile Landscape */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Tablets Portrait */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Tablets Landscape */
+@media (min-width: 1024px) and (max-width: 1279px) {
 }
