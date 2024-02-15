@@ -36,7 +36,7 @@ const Aboutus = () => {
                 treatment Root Canal treatment Wisdom tooth surgeries Teeth
                 whitening
               </p>
-              <div classNameName="justify-center items-center flex">
+              <div className="justify-center items-center flex">
                 <button className="flex w-auto text-white bg-[#0CB8B6] hover:bg-[#000] border-0 py-2 px-6 focus:outline-none  rounded">
                   Book an Appoinment
                 </button>
