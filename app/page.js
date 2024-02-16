@@ -4,22 +4,28 @@ import Feature from "@/components/Feature";
 import Footer from "@/components/Footer";
 import Gallary from "@/components/Gallary";
 import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
+import styles from "@/styles/style.module.scss";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div>
-      <Hero />
-      <Feature />
-      <Aboutus />
-      <Services />
-      <Testimonial />
-      <Gallary />
-      <Contact />
-      <Footer />
-      {/* <h1>Hello</h1> */}
+    <div className={styles.main}>
+      <div className={styles.navbar}>
+        <Navbar />
+      </div>
+      <div className={styles.container}>
+        <Hero />
+        <Feature />
+        <Aboutus />
+        <Services />
+        <Testimonial />
+        <Gallary />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
