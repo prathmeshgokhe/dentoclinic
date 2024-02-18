@@ -1,5 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const font = Montserrat({ subsets: ["latin"] });
 
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/logomain.png" sizes="3x32" />
       </head>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
