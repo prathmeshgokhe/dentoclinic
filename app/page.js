@@ -9,6 +9,7 @@ import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import styles from "@/styles/style.module.scss";
 import Image from "next/image";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
         {/* <Gallary /> */}
         <Contact />
         <Footer />
+        <SpeedInsights />
       </div>
     </div>
   );
