@@ -11,3 +11,19 @@
   background-position: center;
   padding: 70px;
 }
+
+/* Mobile Portrait */
+@media (min-width: 300px) and (max-width: 480px) {
+  .main {
+    padding-top: 180px;
+    width: 100%;
+    // border: 2px solid red;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: url("../public/homepage.png") no-repeat;
+    // Optionally, you can set additional properties like background size, position, etc.
+    background-size: cover;
+    background-position: center;
+  }
+}

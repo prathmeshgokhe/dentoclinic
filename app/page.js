@@ -14,7 +14,19 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <div className={styles.navbar}>
-        <Navbar />
+        <div className={styles.logo}>
+          <Image
+            className="object-cover object-center rounded"
+            alt="hero"
+            src="/logomain.png"
+            width={40}
+            height={40}
+          />
+          <span className={styles.name}>Dentoclinic</span>
+        </div>
+        <div className={styles.button}>
+          <button>Book an Appoinment</button>
+        </div>
       </div>
       <div className={styles.container}>
         <Hero />
@@ -22,7 +34,7 @@ export default function Home() {
         <Aboutus />
         <Services />
         <Testimonial />
-        <Gallary />
+        {/* <Gallary /> */}
         <Contact />
         <Footer />
       </div>

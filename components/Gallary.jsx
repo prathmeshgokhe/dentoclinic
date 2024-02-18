@@ -26,6 +26,13 @@ const Gallary = () => {
                   width={500}
                   height={300}
                 />
+                <Image
+                  className="object-cover object-center rounded"
+                  alt="hero"
+                  src="/logomain.png"
+                  width={40}
+                  height={40}
+                />
               </div>
               <div className="md:p-2 p-1 w-1/2">
                 <Image
