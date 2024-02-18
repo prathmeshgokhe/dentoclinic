@@ -5,7 +5,7 @@ const font = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dentoclinic Lab",
-  description: "Dentoclinic lab",
+  description: "Dentoclinic lab ",
 };
 
 export default function RootLayout({ children }) {

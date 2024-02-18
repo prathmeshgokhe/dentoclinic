@@ -13,7 +13,7 @@ const Gallary = () => {
           </div> */}
           <div className=" flex justify-center items-center">
             <h2 className="text-3xl md:text-6xl font-bold text-black mb-4">
-              Gallery
+              Gallerys
             </h2>
           </div>
           <div className="flex flex-wrap md:-m-2 -m-1">
